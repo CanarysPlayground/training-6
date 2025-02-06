@@ -18,3 +18,9 @@ jobs:
       
      - name: run a smaple
        run: echo Hello World
+     
+     - name: Upload artifact
+       uses: actions/upload-artifact@v4
+       with:
+        name: build=artifact
+        path: ${{github.workspace}}
